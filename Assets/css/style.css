@@ -1,0 +1,13 @@
+:root{
+    --primary:#5290a8;
+    --secondary:#32f5c8;
+    --terciary:#a9bdc6;
+    --colorTwitrer:#00acee;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
