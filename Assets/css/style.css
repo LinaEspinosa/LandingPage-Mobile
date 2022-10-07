@@ -1,8 +1,9 @@
 :root{
-    --primary:#5290a8;
+    --primary:#013243;
     --secondary:#32f5c8;
     --terciary:#a9bdc6;
-    --colorTwitrer:#00acee;
+    --colorTwitter:#00acee;
+    --font: 'Poppins', sans-serif;
 
 }
 
@@ -10,4 +11,100 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family:var(--font);
+}
+
+body{
+    background-color:var(--primary);
+    position:relative;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1rem 0 1rem 1rem;
+}
+
+.container .logo{
+    display: flex;
+    align-self: flex-start;
+}
+
+.container .img-one img{
+    position:absolute;
+    max-width:5.5rem;
+    left: 2rem;
+    top:6rem;
+}
+.container .img-two img{
+    position:absolute;
+    max-width:9rem;
+    right:4.5rem;
+    top:4rem;
+    z-index: -1;
+}
+.container .img-three img{
+    position:absolute;
+    min-width:9.5rem;
+    right:-4.5rem;
+    top:4.5rem;
+    z-index: -1;
+}
+
+.container .title{
+    color:var(--secondary);
+    margin-top:7.7rem;
+    font-size:2.2rem;
+    font-weight:600;
+    letter-spacing: .1rem;
+}
+
+.container .text{
+    color:var(--terciary);
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+.container .btn{
+    display: flex;
+    align-self: flex-start;
+    position: relative;
+}
+
+.container .btn .btn-text{
+    align-self: flex-start;
+    background-color:var(--secondary);
+    border:none;
+    padding:1rem 1.5rem;
+    color:var(--primary);
+    font-weight: 600;
+    font-size:1.2rem;
+    margin-top: 1.5rem;
+    border-radius: .5rem;
+    
+}
+
+.container .icon{
+    margin-top: 12rem;
+    display:flex;
+    align-self:flex-start;
+    color:var(--terciary);
+    
+}
+.container .icon ion-icon{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:1.2rem;
+    height:1.2rem;
+    background-color:var(--colorTwitter);
+    color:var(--primary);
+    border-radius: 50%;
+    padding:.5rem;
+}
+
+.container .icon span{
+    font-size: 1.2rem;
+    margin-left: .7rem;
 }
